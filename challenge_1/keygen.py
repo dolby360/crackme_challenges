@@ -29,4 +29,4 @@ def key_gen(user_name):
     uVar12 = uint64_wraparound((uVar12 >> 0x1b ^ uVar12) * 10723151780598845931)
     return uint64_wraparound(uVar12 >> 0x1f ^ uVar12)
 
-print(key_gen("dolev"))
+print(key_gen(input("Enter user name: ")))
