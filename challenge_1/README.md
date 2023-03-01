@@ -462,12 +462,12 @@ void FUN_1400012d0(char *user_name,ulonglong *param_2,undefined8 param_3,undefin
     uVar12 = uint64_wraparound((uVar12 >> 0x1b ^ uVar12) * 10723151780598845931)
     return uint64_wraparound(uVar12 >> 0x1f ^ uVar12)
     ```
-    The real catch is in the function uint64_wraparound. My first implementation was:
+    There was 2 options to get this wraparound:
     ```python
     def uint64_wraparound(num):
         return num % (0xffffffffffffffff + 1)
     ```
-    which suppose to make sense. But god knows why I got the wrong precision. So in order to achive accurate precision I changed the function to
+    I chose this one :)
     ```python
     def uint64_wraparound(num):
         return num & 0xffffffffffffffff
