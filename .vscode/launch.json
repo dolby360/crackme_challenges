@@ -29,6 +29,15 @@
             "console": "integratedTerminal",
             "justMyCode": true,
             "cwd": "${workspaceFolder}/challenge_3"
+        },
+        {
+            "name": "bandit",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/bandit/helper.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "cwd": "${workspaceFolder}/bandit"
         }
     ]
 }
