@@ -6,3 +6,4 @@ Most challenges originate from [picoCTF](https://play.picoctf.org/practice?categ
 * [Stonks](./Stonks/README.md)
 * [Cache Me Outside](./Cache%20Me%20Outside/README.md)
 * [Unsubscriptions Are Free](./Unsubscriptions%20Are%20Free/README.md)
+* [babygame01](./babygame01/README.md)
