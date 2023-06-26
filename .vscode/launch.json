@@ -5,45 +5,18 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "exp in usr",
+            "name": "python",
             "type": "python",
             "request": "launch",
-            "program": "${workspaceFolder}/ROPtest/exp.py",
+            "program": "${workspaceFolder}/filtered-shellcode/helper.py",
             "console": "integratedTerminal",
             "justMyCode": true
-        },
-        {
-            "name": "exploit",
-            "type": "python",
-            "request": "launch",
-            "program": "${workspaceFolder}/challenge_2/exploit.py",
-            "console": "integratedTerminal",
-            "justMyCode": true,
-            "cwd": "${workspaceFolder}/challenge_2"
-        },
-        {
-            "name": "Twixer python",
-            "type": "python",
-            "request": "launch",
-            "program": "${workspaceFolder}/Unsubscriptions Are Free/exploit.py",
-            "console": "integratedTerminal",
-            "justMyCode": true,
-            "cwd": "${workspaceFolder}/Unsubscriptions Are Free"
-        },
-        {
-            "name": "bandit",
-            "type": "python",
-            "request": "launch",
-            "program": "${workspaceFolder}/bandit/helper.py",
-            "console": "integratedTerminal",
-            "justMyCode": true,
-            "cwd": "${workspaceFolder}/bandit"
         },
         {
             "name": "Latest c code",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/basic-file-exploit/a.out",
+            "program": "${workspaceFolder}/filtered-shellcode/a.out",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
