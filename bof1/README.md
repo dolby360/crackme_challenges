@@ -12,7 +12,7 @@ By subtracting the address `0xcab0` from `0xcad8`, we obtain a result of 40, whi
 
 After filling 36 bytes, it is crucial to consider stack alignment. To reach the desired address `0xcad8`, an additional 4 bytes must be filled.
 
-Furthermore, it is worth noting that the ebp register consists of 32 bits, necessitating an additional 4 bytes to be filled.
+Furthermore, it is worth noting that the ebp register consists of 32 bits, necessitating an additional 4 bytes to be filled.  
 ![Alt text](image-3.png)
 
 Overall, we need to set the length of junk to be 44, which is calculated as the sum of (36 + 4 + 4 = 44)
