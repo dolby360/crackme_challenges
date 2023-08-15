@@ -9,3 +9,21 @@ Most challenges originate from [picoCTF](https://play.picoctf.org/practice?categ
 * [babygame01](./babygame01/README.md)
 * [Clutter Overflow](./clutter-overflow/README.md)
 * [Simple buffer overflow](./bof1/README.md)
+
+
+This is a cool life hack on how to run the binary as server and attach gdb.
+
+run netcat and redirect the input from fifo:
+```bash
+nc -l -p 8080 < fifo | ./chall >fifo
+```
+
+gdb to fun process:
+```bash
+process_name="chall"; pid=$(pgrep "$process_name"); [[ -n $pid ]] && gdb -p "$pid" -x .gdbinit
+```
+
+cat the content of a file into the running process:
+```bash
+cat buff | nc localhost 8080
+```
