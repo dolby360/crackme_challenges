@@ -11,6 +11,8 @@ Most challenges originate from [picoCTF](https://play.picoctf.org/practice?categ
 | Buffer under flow    | [babygame01](./babygame01/README.md)     |
 | In-depth Explanation of Buffer Overflow  | [Clutter Overflow](./clutter-overflow/README.md)     |
 | Just another BOF    | [Simple buffer overflow](./bof1/README.md)     |
+| How to find the right glibc, RPO, buffer overflow, cannary leak, return to libc | [Guessing_Game_2](./Guessing_Game_2/README.md) |
+
 
 ## PRO TIP
 You're interested in crafting your own Python automation scripts for the exploits. However, you're also keen on debugging your code as it runs. Wondering how you can effectively achieve this?
