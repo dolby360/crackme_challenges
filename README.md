@@ -3,15 +3,15 @@ Most challenges originate from [picoCTF](https://play.picoctf.org/practice?categ
 
 | Background | link |
 | -------- | :------: |
-| This was my first challenge where I had to craft a keygen, </br>reminiscent of the ones we used to create back in the year 2000.    | [challenge 1](./challenge_1/README.md)     |
-| I utilized a ROPchain and managed to leak the system and /bin/sh addresses.     | [Here's a LIBC](./Here's%20a%20LIBC/README.md)     |
-| A simple example of printf formatting vulnerability  | [Stonks](./Stonks/README.md)     |
-| Exploiting a vulnerability in glibc 2.27's tcache mechanism. | [Cache Me Outside](./Cache%20Me%20Outside/README.md)     |
-| Use after free    | [Unsubscriptions Are Free](./Unsubscriptions%20Are%20Free/README.md)     |
-| Buffer under flow    | [babygame01](./babygame01/README.md)     |
-| In-depth Explanation of Buffer Overflow  | [Clutter Overflow](./clutter-overflow/README.md)     |
-| Just another BOF    | [Simple buffer overflow](./bof1/README.md)     |
-| How to find the right glibc, RPO, buffer overflow, cannary leak, return to libc | [Guessing_Game_2](./Guessing_Game_2/README.md) |
+| This was my first challenge where I had to craft a keygen, </br>reminiscent of the ones we used to create back in the year 2000.    | [challenge 1](./binary_exploitation/challenge_1/README.md)     |
+| I utilized a ROPchain and managed to leak the system and /bin/sh addresses.     | [Here's a LIBC](./binary_exploitation/Here's%20a%20LIBC/README.md)     |
+| A simple example of printf formatting vulnerability  | [Stonks](./binary_exploitation/Stonks/README.md)     |
+| Exploiting a vulnerability in glibc 2.27's tcache mechanism. | [Cache Me Outside](./binary_exploitation/Cache%20Me%20Outside/README.md)     |
+| Use after free    | [Unsubscriptions Are Free](./binary_exploitation/Unsubscriptions%20Are%20Free/README.md)     |
+| Buffer under flow    | [babygame01](./binary_exploitation/babygame01/README.md)     |
+| In-depth Explanation of Buffer Overflow  | [Clutter Overflow](./binary_exploitation/clutter-overflow/README.md)     |
+| Just another BOF    | [Simple buffer overflow](./binary_exploitation/bof1/README.md)     |
+| How to find the right glibc, RPO, buffer overflow, cannary leak, return to libc | [Guessing_Game_2](./binary_exploitation/Guessing_Game_2/README.md) |
 
 
 ## PRO TIP
