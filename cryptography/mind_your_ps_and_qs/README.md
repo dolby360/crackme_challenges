@@ -1,6 +1,6 @@
 # mind your ps and qs
 
-In this CTF challange challenge, I encountered the following details:
+In this [CTF](https://play.picoctf.org/practice/challenge/162?category=2&page=1) challange challenge, I encountered the following details:
 ```
 Decrypt my super sick RSA:
 c: 861270243527190895777142537838333832920579264010533029282104230006461420086153423
