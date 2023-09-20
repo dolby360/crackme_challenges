@@ -13,7 +13,7 @@ Similarly, I applied the same approach to the shift encryption. I analyzed the e
 The one remaining challenge was determining the key used for the encryption. It was not clear which letter had been chosen as the key. To overcome this obstacle, I brute-forced all possible letter combinations until I found the one that resembled the flag.
 
 
-Please check out [my Python script](./README.md) to see how I reversed the encryption. If you find any flaws, please don't hesitate to open an issue.
+Please check out [my Python script](./e.py) to see how I reversed the encryption. If you find any flaws, please don't hesitate to open an issue.
 
 
 
