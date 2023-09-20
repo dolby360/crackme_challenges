@@ -4,7 +4,7 @@ Most challenges originate from [picoCTF](https://play.picoctf.org/practice?categ
 ## Binary exploitation
 
 | Background | link |
-| -------- | :------: |
+| -------- | :------ |
 | This was my first challenge where I had to craft a keygen, </br>reminiscent of the ones we used to create back in the year 2000.    | [challenge 1](./binary_exploitation/challenge_1/README.md)     |
 | I utilized a ROPchain and managed to leak the system and /bin/sh addresses.     | [Here's a LIBC](./binary_exploitation/Here's%20a%20LIBC/README.md)     |
 | A simple example of printf formatting vulnerability  | [Stonks](./binary_exploitation/Stonks/README.md)     |
@@ -17,8 +17,9 @@ Most challenges originate from [picoCTF](https://play.picoctf.org/practice?categ
 
 ## Cryptography
 | Background | link |
-| -------- | :------: |
+| -------- | :------ |
 | brute-force RSA | [mind_your_ps_and_qs](./cryptography/mind_your_ps_and_qs/README.md) |
+| Breaking down the problem until it solved | [New Caesar](./cryptography/NewCaesar/README.md) |
 
 ## PRO TIP
 You're interested in crafting your own Python automation scripts for the exploits. However, you're also keen on debugging your code as it runs. Wondering how you can effectively achieve this?
