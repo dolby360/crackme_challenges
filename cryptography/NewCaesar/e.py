@@ -19,6 +19,7 @@ def reverse_shift(sec_enc, key):
         ret += ALPHABET[ord(c) - ord(key)]
     return ret
 
-for key in ALPHABET:
+if __name__ == "__main__":
     flag = "dcebcmebecamcmanaedbacdaanafagapdaaoabaaafdbapdpaaapadanandcafaadbdaapdpandcac" 
-    print(reverse_b16_encode(reverse_shift(flag, key)))
+    for key in ALPHABET:
+        print(reverse_b16_encode(reverse_shift(flag, key)))
