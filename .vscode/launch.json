@@ -8,7 +8,7 @@
             "name": "python",
             "type": "python",
             "request": "launch",
-            "program": "${workspaceFolder}/cryptography/NewCaesar/e.py",
+            "program": "${workspaceFolder}/cryptography/MiniRSA/e.py",
             "console": "integratedTerminal",
             "justMyCode": true
         },
