@@ -111,3 +111,47 @@ k $(printf "\\x3B") cat /etc/natas_webpass/natas11 $(printf "\\x3B") echo
 ```
 
 ## Level 10 → Level 11
+Data is loaded from cookies
+
+```php
+function loadData($def) {
+    global $_COOKIE;
+    .
+    .
+    .
+    $tempdata = json_decode(xor_encrypt(base64_decode($_COOKIE["data"])), true);
+    .
+    .
+    .
+}
+
+$data = loadData($defaultdata);
+```
+I needed to reverse the encryption. Initially, I had the color 0xffffff. After decoding the saved data of the cookie and changing it to 0x000000, I observed the difference.
+```
+for 0xffffff
+0l;$$98-8=?#9*jvi 'ngl*+(!$#9lrnh(.*-(.n67
+for 0x000000
+0l;$$98-8=?#9*jvi 'ngl*+(!$#9lrnh~x|{~xn67
+```
+It's easy to notice that the changed characters were `~x|{~,` and the repeated key is also quite apparent.
+```php 
+function xor_encrypt($in) {
+    $key = '<censored>';
+    $text = $in;
+    $outText = '';
+
+    // Iterate through each character
+    for($i=0;$i<strlen($text);$i++) {
+    $outText .= $text[$i] ^ $key[$i % strlen($key)];
+    }
+
+    return $outText;
+}
+```
+Breaking the encryption was straightforward because of the property that if a ^ b = c, then a ^ c = b. You can access the Python script [here](./natas11/reverse.py) that I used to re-encrypt it, edit the cookie, and obtain the solution.
+
+```
+pass
+YWqo0pjpcXzSIl5NMAVxg12QxeC1w9QG
+```
