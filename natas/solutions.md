@@ -172,7 +172,7 @@ To this:
 
 ```php
 <?php
-$fileContents = file_get_contents('/etc/natas_webpass/natas12');
+$fileContents = file_get_contents('/etc/natas_webpass/natas13');
 if ($fileContents === false) {
     echo 'Failed to read the file.';
 } else {
@@ -182,5 +182,26 @@ if ($fileContents === false) {
 ```
 ```
 pass
-YWqo0pjpcXzSIl5NMAVxg12QxeC1w9QG
+lW3jYRI02ZKDBb8VtQBU1f6eDRo6WEj9
 ```
+
+## Level 12 → Level 13
+Same as above but now it prevents none image file by adding.
+
+```php
+else if (! exif_imagetype($_FILES['uploadedfile']['tmp_name'])) {
+        echo "File is not an image";
+    }
+```
+According to the function documentation
+```
+exif_imagetype() reads the first bytes of an image and checks its signature.
+```
+So I just left the first byte to be an image magic.
+
+```
+pass
+qPazSJBmrmU7UQJv17MHk1PGC4DxZMEP
+```
+
+## Level 13 → Level 14
