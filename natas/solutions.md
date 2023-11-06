@@ -205,3 +205,8 @@ qPazSJBmrmU7UQJv17MHk1PGC4DxZMEP
 ```
 
 ## Level 13 → Level 14
+Simple SQL injection you can find the solution in as a [python script](./natas14/e.py)
+```
+pass
+TTkaI7AWG4iDERztBcEyKV7kRXH1EZRB
+```

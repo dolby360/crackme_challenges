@@ -8,7 +8,7 @@
             "name": "python",
             "type": "python",
             "request": "launch",
-            "program": "${workspaceFolder}/cryptography/MiniRSA/e.py",
+            "program": "${workspaceFolder}/natas/natas14/e.py",
             "console": "integratedTerminal",
             "justMyCode": true
         },
