@@ -4,3 +4,4 @@ ghidra
 core
 venv
 RsaCtfTool
+.vscode/launch.json
