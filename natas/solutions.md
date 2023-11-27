@@ -224,3 +224,25 @@ For this challenge. My solution was:
 XkEuChE0SbnKBvH1RU7ksIb9uuLmI7sd
 
 ## Level 16 → Level 17
+[Challenge](./natas17/reverse.php)  
+Completely blind SQL injection.
+Firstly, I have to mention that the only way to crack this was by creating my own MySQL containers on my local computer and learning how SQL works 🙈 (it's been a long time since I last used MySQL).
+My solution was:
+```sql
+SELECT * from users where username="natas18" UNION SELECT username=natas18 and IF(binary SUBSTRING(password,{i},1)=CHAR({ch}), sleep(3), "false"),"1" from users where "1"="1"
+```
+The full solution is [here](./natas17/e.py).
+
+Let's break this query down to understand it.
+
+1. SELECT * from users where username="natas18": This is the original query, selecting all columns (*) from the "users" table where the username is "natas18."
+
+2. UNION: This is used to combine the results of the first query with the results of another query.
+
+3. SELECT username=natas18 and IF(binary SUBSTRING(password,{i},1)=CHAR({ch}), sleep(3), "false"),"1" from users where "1"="1": This is the injected part of the query.
+
+4. username=natas18: Assigns the value "natas18" to the column "username" in the second part of the union.
+
+5. IF(binary SUBSTRING(password,{i},1)=CHAR({ch}), sleep(3), "false"): This is a conditional statement. It checks if the i-th character of the password, when converted to binary and compared to the character represented by the ASCII value {ch}, is true. If true, it causes a delay of 3 seconds using sleep(3). Otherwise, it returns "false."
+
+6. "1" from users where "1"="1": This is added to complete the syntax.
