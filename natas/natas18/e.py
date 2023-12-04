@@ -1,6 +1,4 @@
 import requests
-from tqdm import tqdm
-import time
 import tqdm
 
 url = 'http://natas18.natas.labs.overthewire.org/'

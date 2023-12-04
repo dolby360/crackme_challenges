@@ -254,9 +254,9 @@ Session hijacking was a topic I wasn't initially well-versed in. However, one re
 $maxid = 640; // 640 should be enough for everyone
 ```
 The phrase "should be enough" or the classic "what could possibly go wrong" always sets off a warning signal. The vulnerability lies in the challenge where one can enumerate all session IDs until the admin session ID is captured. It's crucial to always adhere to best practices.
-[challenge](./natas18/reverse.php)
+[challenge](./natas18/reverse.php)  
 [solution](./natas18/e.py)
 
 
-username: natas19
+username: natas19  
 password: 8LMJEhKFbMKIL2mxQKjv0aEDdk7zpT0s
