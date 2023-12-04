@@ -21,6 +21,9 @@ Most challenges originate from [picoCTF](https://play.picoctf.org/practice?categ
 | brute-force RSA | [mind_your_ps_and_qs](./cryptography/mind_your_ps_and_qs/README.md) |
 | Breaking down the problem until it solved | [New Caesar](./cryptography/NewCaesar/README.md) |
 
+## Web
+[Web Challenges](./natas/solutions.md)
+
 ## PRO TIP
 You're interested in crafting your own Python automation scripts for the exploits. However, you're also keen on debugging your code as it runs. Wondering how you can effectively achieve this?
 This is a cool life hack on how to run the binary as server and attach gdb.
