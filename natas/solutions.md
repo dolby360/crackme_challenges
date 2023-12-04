@@ -246,3 +246,17 @@ Let's break this query down to understand it.
 5. IF(binary SUBSTRING(password,{i},1)=CHAR({ch}), sleep(3), "false"): This is a conditional statement. It checks if the i-th character of the password, when converted to binary and compared to the character represented by the ASCII value {ch}, is true. If true, it causes a delay of 3 seconds using sleep(3). Otherwise, it returns "false."
 
 6. "1" from users where "1"="1": This is added to complete the syntax.
+
+## Level 17 → Level 18
+
+Session hijacking was a topic I wasn't initially well-versed in. However, one red flag that caught my attention was the comment in the code:
+```php
+$maxid = 640; // 640 should be enough for everyone
+```
+The phrase "should be enough" or the classic "what could possibly go wrong" always sets off a warning signal. The vulnerability lies in the challenge where one can enumerate all session IDs until the admin session ID is captured. It's crucial to always adhere to best practices.
+[challenge](./natas18/reverse.php)
+[solution](./natas18/e.py)
+
+
+username: natas19
+password: 8LMJEhKFbMKIL2mxQKjv0aEDdk7zpT0s
