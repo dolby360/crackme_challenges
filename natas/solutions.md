@@ -260,3 +260,20 @@ The phrase "should be enough" or the classic "what could possibly go wrong" alwa
 
 username: natas19  
 password: 8LMJEhKFbMKIL2mxQKjv0aEDdk7zpT0s
+
+## Level 18 → Level 19
+![Alt text](image-7.png)  
+They encoded the random number as ASCII and concatenated it with the ASCII representation of -$username.
+
+I used this [test script](./natas19/tests.py) for reaserch.  
+And [this is the solution](./natas19/sol.py)
+
+
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/OXC9J9e9I8g/0.jpg)](https://www.youtube.com/watch?v=OXC9J9e9I8g)
+
+
+
+username: natas20  
+guVaZ3ET35LbgbFMoaN5tFcYT1jEP7UH
+
+## Level 19 → Level 20
