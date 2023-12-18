@@ -277,3 +277,7 @@ username: natas20
 guVaZ3ET35LbgbFMoaN5tFcYT1jEP7UH
 
 ## Level 19 → Level 20
+Add new line and admin 1 so it'll set the admin to 1
+
+Username: natas21
+Password: 89OWrTkGmiLZLv12JY4tLj2c4FW0xn56
