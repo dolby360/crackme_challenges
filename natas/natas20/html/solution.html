@@ -1,0 +1,27 @@
+<html>
+<head>
+<!-- This stuff in the header has nothing to do with the level -->
+<link rel="stylesheet" type="text/css" href="http://natas.labs.overthewire.org/css/level.css">
+<link rel="stylesheet" href="http://natas.labs.overthewire.org/css/jquery-ui.css" />
+<link rel="stylesheet" href="http://natas.labs.overthewire.org/css/wechall.css" />
+<script src="http://natas.labs.overthewire.org/js/jquery-1.9.1.js"></script>
+<script src="http://natas.labs.overthewire.org/js/jquery-ui.js"></script>
+<script src=http://natas.labs.overthewire.org/js/wechall-data.js></script><script src="http://natas.labs.overthewire.org/js/wechall.js"></script>
+<script>var wechallinfo = { "level": "natas20", "pass": "guVaZ3ET35LbgbFMoaN5tFcYT1jEP7UH" };</script></head>
+<body>
+<h1>natas20</h1>
+<div id="content">
+DEBUG: MYREAD hqo8k9sneeb5qlh4n3ghi8isjp<br>DEBUG: Reading from /var/lib/php/sessions/mysess_hqo8k9sneeb5qlh4n3ghi8isjp<br>DEBUG: Read [name aa]<br>DEBUG: Read [admin 1]<br>DEBUG: Read []<br>You are an admin. The credentials for the next level are:<br><pre>Username: natas21
+Password: 89OWrTkGmiLZLv12JY4tLj2c4FW0xn56</pre>
+<form action="index.php" method="POST">
+Your name: <input name="name" value="aa"><br>
+<input type="submit" value="Change name" />
+</form>
+<div id="viewsource"><a href="index-source.html">View sourcecode</a></div>
+</div>
+</body>
+</html>
+DEBUG: MYWRITE hqo8k9sneeb5qlh4n3ghi8isjp name|s:2:"aa";admin|s:1:"1";<br>DEBUG: Saving in /var/lib/php/sessions/mysess_hqo8k9sneeb5qlh4n3ghi8isjp<br>DEBUG: admin => 1<br>DEBUG: name => aa<br><br />
+<b>Warning</b>:  Unknown: Session callback expects true/false return value in <b>Unknown</b> on line <b>0</b><br />
+<br />
+<b>Warning</b>:  Unknown: Failed to write session data using user defined save handler. (session.save_path: /var/lib/php/sessions) in <b>Unknown</b> on line <b>0</b><br />

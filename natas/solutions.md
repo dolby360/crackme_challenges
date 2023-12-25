@@ -281,3 +281,19 @@ Add new line and admin 1 so it'll set the admin to 1
 
 Username: natas21
 Password: 89OWrTkGmiLZLv12JY4tLj2c4FW0xn56
+
+## Level 20 → Level 21
+
+There are two files involved in this challenge.  
+[main](./natas21/reverse.php)  
+[Another page](./natas21/reverse2.php)  
+The interesting (or concerning) aspect of the second page is that it shares the same session as the main page.  
+After injecting "admin=1," I utilized the cookies to connect to the main page, and that's it. I am now a manager.  
+[exploit sctript](./natas21/e.py)  
+
+Username: natas22  
+Password: 91awVM9oDiUGm33JdzM7RVLBS8bz9n0s  
+
+## Level 21 → Level 22
+
+
