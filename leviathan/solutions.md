@@ -70,3 +70,92 @@ The next day, I discussed this strange behavior with a colleague, and he explain
 
 username: leviathan3  
 pass: Q0G8j4sakn  
+
+
+## leviathan3
+I'm not sure what this challenge is about
+I ran this like 
+```
+leviathan3@gibson:~$ ltrace ./level3
+__libc_start_main(0x80492bf, 1, 0xffffd5f4, 0 <unfinished ...>
+strcmp("h0no33", "kakaka")                                                                                                       = -1
+printf("Enter the password> ")                                                                                                   = 20
+fgets(Enter the password> l
+"l\n", 256, 0xf7e2a620)                                                                                                    = 0xffffd3cc
+strcmp("l\n", "snlprintf\n")                                                                                                     = -1
+puts("bzzzzzzzzap. WRONG"bzzzzzzzzap. WRONG
+)                                                                                                       = 19
++++ exited (status 0) +++
+```
+
+I saw this 
+strcmp("l\n", "snlprintf\n")  
+Tha't it. I figure out the password I guess.
+
+
+username: leviathan4  
+pass: AgvropI4OA  
+
+## leviathan4
+
+Just run the program and convert bin to ascii
+username: leviathan5 
+pass: EKKlTF1Xqs  
+
+## leviathan5
+
+ln -s /etc/leviathan_pass/leviathan6 /tmp/file.log
+
+username: leviathan6 
+pass: YZ55XPVk2l  
+
+## leviathan6
+Extreamlly simple reversing:
+```asm
+lea    ecx,[esp+0x4]
+and    esp,0xfffffff0
+push   DWORD PTR [ecx-0x4]
+push   ebp
+mov    ebp,esp
+push   ebx
+push   ecx
+sub    esp,0x10
+mov    eax,ecx
+mov    DWORD PTR [ebp-0xc],0x1bd3
+cmp    DWORD PTR [eax],0x2
+je     0x8049216 <main+64>
+mov    eax,DWORD PTR [eax+0x4]
+mov    eax,DWORD PTR [eax]
+sub    esp,0x8
+push   eax
+push   0x804a008
+call   0x8049050 <printf@plt>
+add    esp,0x10
+sub    esp,0xc
+push   0xffffffff
+call   0x8049090 <exit@plt>
+mov    eax,DWORD PTR [eax+0x4]
+add    eax,0x4
+mov    eax,DWORD PTR [eax]
+sub    esp,0xc
+push   eax
+call   0x80490b0 <atoi@plt>
+add    esp,0x10
+cmp    DWORD PTR [ebp-0xc],eax
+jne    0x804925a <main+132>
+call   0x8049060 <geteuid@plt>
+mov    ebx,eax
+call   0x8049060 <geteuid@plt>
+sub    esp,0x8
+push   ebx
+push   eax
+call   0x80490a0 <setreuid@plt>
+add    esp,0x10
+sub    esp,0xc
+push   0x804a022
+call   0x8049080 <system@plt>
+```
+./leviathan6 7123
+
+username: leviathan6  
+pass: 8GpZ5f8Hze  
