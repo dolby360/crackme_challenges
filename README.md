@@ -34,12 +34,12 @@ mkfifo fifo
 ```
 run netcat and redirect the input from fifo:
 ```bash
-nc -l -p 8080 < fifo | ./vuln >fifo
+nc -l -p 8080 < fifo | ./hash >fifo
 ```
 
 gdb to fun process:
 ```bash
-process_name="vuln"; pid=$(pgrep "$process_name"); [[ -n $pid ]] && gdb -p "$pid" -x .gdbinit
+process_name="hash"; pid=$(pgrep "$process_name"); [[ -n $pid ]] && gdb -p "$pid" -x .gdbinit
 ```
 
 cat the content of a file into the running process:

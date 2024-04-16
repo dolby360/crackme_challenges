@@ -5,3 +5,8 @@ core
 venv
 RsaCtfTool
 .vscode/launch.json
+.vscode/settings.json
+*a.out
+
+# Binaries
+pwnable/md5_calculator/hash
