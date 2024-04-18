@@ -14,6 +14,7 @@ Most challenges originate from [picoCTF](https://play.picoctf.org/practice?categ
 | In-depth Explanation of Buffer Overflow  | [Clutter Overflow](./binary_exploitation/clutter-overflow/README.md)     |
 | Just another BOF    | [Simple buffer overflow](./binary_exploitation/bof1/README.md)     |
 | How to find the right glibc, RPO, buffer overflow, cannary leak, return to libc | [Guessing_Game_2](./binary_exploitation/Guessing_Game_2/README.md) |
+| Use rand seed from libc to find the next rand numbers | [md5 calculator](./pwnable/md5_calculator/README.md) |
 
 ## Cryptography
 | Background | link |
